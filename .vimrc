@@ -678,7 +678,7 @@ if has("autocmd")
   augroup hlsearch
     autocmd!
     autocmd InsertEnter * let g:restorehlsearch=&hlsearch | :set nohlsearch
-    autocmd InsertLeave * let &hlsearch=g:restorehlsearch
+    "autocmd InsertLeave * let &hlsearch=g:restorehlsearch
   augroup END
 endif
 set ignorecase  " case insensitive search
